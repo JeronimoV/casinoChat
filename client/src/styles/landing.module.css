@@ -1,0 +1,354 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.bienvenido{
+    font-size:1.2rem;
+    position: relative;
+    bottom: 4rem;
+    text-shadow: 0px 0px 12px black;
+}
+
+.redBlack{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+.wait{
+    z-index: 30;
+    background-color: #1f1f1f;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.off{
+    display: none;
+}
+
+.options{
+    position: absolute;
+    top: 2vw;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.servedButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+}
+
+.buttonslist{
+    display: flex;
+}
+
+.containerLit{
+    height: 80%;
+    width: 50%;
+    padding: 1vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    background-color: #313131;
+    height: 100%;
+    width: 100%;
+    opacity: 0.05;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+}
+
+.chatContainer{
+    background-color: rgb(20, 20, 20);
+    padding: 0.5vw;
+    height: 100%;
+    width: 80%;
+}
+
+.start{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+}
+
+.start p{
+    white-space: nowrap;
+}
+
+.username{
+    border: 1px solid white;
+    background-color: transparent;
+    border: 0.15rem solid black;
+    width: fit-content;
+    color: black;
+    position: relative;
+    bottom: 4rem;
+}
+
+.username::placeholder{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.chatView{
+    height: 92%;
+    width: 100%;
+    background-color: #1f1f1f;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inputDiv{
+    height: 5%;
+    width: 100%;
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.buttonForm{
+    position: relative;
+    bottom: 4rem;
+}
+
+.input{
+    margin-top: 1vw;
+    width: 80%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.button{
+    margin-top: 1vw;
+    height: 100%;
+    width: 20%;
+    margin-left: 1vw;
+    background-color: rgb(29, 29, 29);
+    border: none;
+    color: white;
+}
+
+.client{
+    background-color: rgb(19, 139, 19);
+    padding: 0.2vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    width: fit-content;
+    color: white;
+    margin-right: auto;
+    max-width: 80%;
+    word-wrap:break-word;
+    word-break: break-all;
+    z-index: 30;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
+.admin{
+    background-color: rgb(170, 14, 14);
+    padding: 0.2vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    margin-left: auto;
+    width: fit-content;
+    color: white;
+    max-width: 80%;
+    word-wrap:break-word;
+    word-break: break-all;
+    z-index: 30;
+    margin-left: auto;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.chats{
+    position: absolute;
+    left: 10vw;
+    width: 100%;
+    height: fit-content;
+    overflow:auto;
+}
+
+.chats div{
+    margin: 1vw;
+    background-color: #1f1f1f;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chats div:hover{
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .chatContainer{
+        width: 100%;
+        height: 90%;
+        padding: 1vw;
+    }
+    .button{
+        font-size: 1rem;
+    }
+    .containerLit{
+        width: 90%;
+    }
+
+    .inputDiv{
+        margin-top: 0.5vw;
+    }
+
+    .servedButtons p{
+        font-size: 1rem;
+    }
+    .servedButtons div button{
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 1rem;
+    }
+    .chats{
+        display: flex;
+        bottom: 1rem;
+        left: 0;
+    }
+    .chats div p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .startWelcome{
+        gap: 0.3rem;
+    }
+    .bienvenido{
+        font-size: 3vw;
+        word-wrap: break-word;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        bottom: 8rem;
+    }
+    .redBlack{
+        height: 75%;
+        width: 75%;
+    }
+    .start{
+        gap: 1rem;
+    }
+    .username{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 60%;
+        font-size: 4vw;
+        bottom: 8rem;
+    }
+    .username::placeholder{
+        font-size: 4vw;
+    }
+    .chatContainer{
+        width: 100%;
+        height: 80%;
+        padding: 1vw;
+    }
+    .button{
+        height: fit-content;
+        width: fit-content;
+        font-size: 0.7rem;
+    }
+    .buttonForm{
+        bottom: 8rem;
+    }
+    .containerLit{
+        width: 90%;
+    }
+    .client{
+        font-size: 1rem;
+    }
+    .admin{
+        font-size: 1rem;
+    }
+    .options{
+        top: 2rem;
+    }
+    .servedButtons p{
+        font-size: 2vw;
+    }
+    .servedButtons div button{
+        height: 1.2rem;
+        width: 1.2rem;
+        font-size: 3vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chats{
+        bottom: 1rem;
+    }
+    .chats div{
+        height: fit-content;
+        width: fit-content;
+        margin: 0.2rem;
+    }
+    .chats div p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bienvenido{
+        bottom: 15rem;
+    }
+    .buttonForm{
+        bottom: 15rem;
+    }
+    .username{
+        bottom: 15rem;
+    }
+}
