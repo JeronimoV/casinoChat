@@ -12,10 +12,12 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
+    top: 0;
+    left: 0;
 }
 
 .bienvenido{
-    font-size:1.2rem;
+    font-size:1rem;
     position: relative;
     bottom: 4rem;
     text-shadow: 0px 0px 12px black;
@@ -273,7 +275,7 @@
         width: fit-content;
         height: fit-content;
         text-align: center;
-        bottom: 8rem;
+        bottom: 10rem;
     }
     .redBlack{
         height: 75%;
@@ -287,7 +289,7 @@
         padding-right: 1rem;
         width: 60%;
         font-size: 4vw;
-        bottom: 8rem;
+        bottom: 10rem;
     }
     .username::placeholder{
         font-size: 4vw;
@@ -303,7 +305,7 @@
         font-size: 0.7rem;
     }
     .buttonForm{
-        bottom: 8rem;
+        bottom: 10rem;
     }
     .containerLit{
         width: 90%;
@@ -341,7 +343,19 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
+    .bienvenido{
+        bottom: 12rem;
+    }
+    .buttonForm{
+        bottom: 12rem;
+    }
+    .username{
+        bottom: 12rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
     .bienvenido{
         bottom: 15rem;
     }
